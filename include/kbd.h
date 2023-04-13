@@ -4,4 +4,4 @@
 #include "ram.h"
 
 
-void inp();
+void inp(int(&buffer)[8]);

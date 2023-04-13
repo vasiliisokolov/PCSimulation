@@ -1,6 +1,6 @@
 #include "cpu.h"
 
-int compute()
+int compute(int(&buffer)[8])
 {
 	int out[8];
 	read(out, buffer);

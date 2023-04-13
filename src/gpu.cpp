@@ -1,7 +1,7 @@
 #include "gpu.h"
 #include "ram.h"
 
-void show()
+void show(int(&buffer)[8])
 {
 	int out[8];
 	read(out, buffer);

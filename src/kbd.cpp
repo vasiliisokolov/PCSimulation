@@ -1,6 +1,6 @@
 #include "kbd.h"
 
-void inp()
+void inp(int(&buffer)[8])
 {
 	int in[8];
 	std::cout << "Fill the Buffer: " << std::endl;

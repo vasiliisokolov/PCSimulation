@@ -1,6 +1,6 @@
 #include "disk.h"
 
-void save()
+void save(int(&buffer)[8])
 {
 	int in[8];
 	read(in, buffer);
@@ -12,7 +12,7 @@ void save()
 	data.close();
 }
 
-void load()
+void load(int(&buffer)[8])
 {
 	int out[8];
 	std::ifstream data("data.txt", std::ios::in);
