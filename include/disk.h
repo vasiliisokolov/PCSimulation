@@ -1,8 +1,10 @@
 #pragma once
-#include <iostream>
+
+#include "ram.h"
 #include <fstream>
+#include <iostream>
 
 
-void save(int);
+void save();
 
-void load(int);
+void load();

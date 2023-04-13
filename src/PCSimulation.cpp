@@ -1,16 +1,16 @@
 ﻿#include "PCSimulation.h"
 
-/*
+
 enum operation
 {
 	sum = 0,
-	save = 1 ,
-	load = 2 ,
-	input = 3 ,
+	sv = 1,
+	ld = 2,
+	input = 3,
 	display = 4,
-	exit = 5
-}
-*/
+	ex = 5
+};
+
 
 int main()
 {
@@ -29,22 +29,22 @@ int main()
 		{
 			switch (op)
 			{
-			case 0:
-				sum();
+			case operation::sum:
+				std::cout << "Buffer summ is: " << compute() << std::endl;
 				break;
-			case 1:
+			case operation::sv:
 				save();
 				break;
-			case 2:
+			case operation::ld:
 				load();
 				break;
-			case 3:
-				input();
+			case operation::input:
+				inp();
 				break;
-			case 4:
-				display();
+			case operation::display:
+				show();
 				break;
-			case 5:
+			case operation::ex:
 				return 0;
 				
 			}

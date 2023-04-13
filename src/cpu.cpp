@@ -1,12 +1,14 @@
 #include "cpu.h"
 
-int compute(int buffer[])
+int compute()
 {
+	int out[8];
+	read(out, buffer);
 	int sum = 0;
-	for (int i = 0; i < 0; i++)
+	for(int i = 0; i < 8; i++)
 	{
-		sum += buffer[i];
+		sum +=out[i];
 	}
-	std::cout << "Buffer summ is: " << sum << std::endl;
+	return sum;
 
 }
