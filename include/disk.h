@@ -5,6 +5,6 @@
 #include <iostream>
 
 
-void save(int(&buffer)[8]);
+void save();
 
-void load(int(&buffer)[8]);
+void load();

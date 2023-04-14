@@ -1,9 +1,9 @@
 #include "cpu.h"
 
-int compute(int(&buffer)[8])
+int compute()
 {
 	int out[8];
-	read(out, buffer);
+	read(out);
 	int sum = 0;
 	for(int i = 0; i < 8; i++)
 	{

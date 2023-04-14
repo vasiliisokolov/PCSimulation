@@ -1,10 +1,10 @@
 #include "gpu.h"
 #include "ram.h"
 
-void show(int(&buffer)[8])
+void show()
 {
 	int out[8];
-	read(out, buffer);
+	read(out);
 	for (int i = 0; i < 8; i++)
 	{
 		std::cout << out[i] << " ";

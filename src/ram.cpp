@@ -2,7 +2,7 @@
 
 
 
-void write(int(&in)[8], int(&buffer)[8])
+void write(int in[])
 {
 	
 	for (int i = 0; i < 8; i++)
@@ -11,7 +11,7 @@ void write(int(&in)[8], int(&buffer)[8])
 	}
 }
 
-void read(int (&out)[8], int(&buffer)[8])
+void read(int out[])
 {
 	for (int i = 0; i < 8; i++)
 	{

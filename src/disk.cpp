@@ -1,9 +1,9 @@
 #include "disk.h"
 
-void save(int(&buffer)[8])
+void save()
 {
 	int in[8];
-	read(in, buffer);
+	read(in);
 	std::ofstream data("data.txt", std::ios::out);
 	for (int i = 0; 0 < 8; i++)
 	{
@@ -12,7 +12,7 @@ void save(int(&buffer)[8])
 	data.close();
 }
 
-void load(int(&buffer)[8])
+void load()
 {
 	int out[8];
 	std::ifstream data("data.txt", std::ios::in);
@@ -21,5 +21,5 @@ void load(int(&buffer)[8])
 		data >> out[i];
 	}
 	data.close();
-	write(out, buffer);
+	write(out);
 }

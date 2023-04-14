@@ -3,4 +3,4 @@
 #include "ram.h"
 #include <iostream>
 
-void show(int(&buffer)[8]);
+void show();

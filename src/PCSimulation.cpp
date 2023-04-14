@@ -30,19 +30,19 @@ int main()
 			switch (op)
 			{
 			case operation::sum:
-				std::cout << "Buffer summ is: " << compute(buffer) << std::endl;
+				std::cout << "Buffer summ is: " << compute() << std::endl;
 				break;
 			case operation::sv:
-				save(buffer);
+				save();
 				break;
 			case operation::ld:
-				load(buffer);
+				load();
 				break;
 			case operation::input:
-				inp(buffer);
+				inp();
 				break;
 			case operation::display:
-				show(buffer);
+				show();
 				break;
 			case operation::ex:
 				return 0;

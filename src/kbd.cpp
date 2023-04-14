@@ -1,6 +1,6 @@
 #include "kbd.h"
 
-void inp(int(&buffer)[8])
+void inp()
 {
 	int in[8];
 	std::cout << "Fill the Buffer: " << std::endl;
@@ -8,5 +8,5 @@ void inp(int(&buffer)[8])
 	{
 		std::cin >> in[i];
 	}
-	write(in, buffer);
+	write(in);
 }

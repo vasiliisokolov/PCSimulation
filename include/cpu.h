@@ -3,4 +3,4 @@
 #include "ram.h"
 
 
-int compute(int(&buffer)[8]);
+int compute();
