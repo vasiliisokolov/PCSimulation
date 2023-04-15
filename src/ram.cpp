@@ -1,5 +1,6 @@
 #include "ram.h"
 
+int buffer[8] = { 0,0,0,0,0,0,0,0 };
 
 
 void write(int in[])
